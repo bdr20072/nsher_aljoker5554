@@ -148,7 +148,7 @@ async def Hussein(event):
 
 
     **"""
-        await event.reply(file='https://telegra.ph/file/a9ab192d3196e014ee015.jpg', message=joker_313)
+        await event.reply(file='https://i.postimg.cc/3JpMDjc2/IMG-20240123-042241-949.jpg', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
         hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
         await event.reply(file='https://i.postimg.cc/3JpMDjc2/IMG-20240123-042241-949.jpg', message=hussein_ali)
