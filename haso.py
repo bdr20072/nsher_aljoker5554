@@ -124,6 +124,7 @@ async def Hussein(event):
 async def stopspamrz(event):
     if gvarstatus("spamwork") is not None and gvarstatus("spamwork") == "true":
         delgvar("spamwork")
+        
         return await edit_delete(event, "**- تم ايقـاف التڪـرار .. بنجـاح ✅**")    return await edit_delete(event, "**- لايوجـد هنـاك تڪرار لـ إيقافه ؟!**")
     await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.(الاوامر|فحص)$"))
