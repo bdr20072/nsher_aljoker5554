@@ -130,9 +130,7 @@ async def Hussein(event):
     await event.delete()
     if event.pattern_match.group(1) == "الاوامر":
         joker_313 = """**
-🤡 قـائمة اوامر النشر التلقائي للمجموعات
-
-===== 🅐🅛🅙🅞🅚🅔🅡 =====
+ قـائمة اوامر النشر التلقائي للمجموعات
 
 `.نشر` عدد الثواني معرف الكروب :
  - للنشر في المجموعة التي وضعت معرفها مع عدد الثواني
@@ -148,17 +146,17 @@ async def Hussein(event):
 
 • مُـلاحظة : جميع الأوامر اعلاه تستخدم بالرد على الرسالة او الكليشة المُراد نشرها
 
-===== 🅐🅛🅙🅞🅚🅔🅡 =====
+
     **"""
         await event.reply(file='https://telegra.ph/file/a9ab192d3196e014ee015.jpg', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
         hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
-        await event.reply(file='https://telegra.ph/file/a9ab192d3196e014ee015.jpg', message=hussein_ali)
+        await event.reply(file='https://i.postimg.cc/3JpMDjc2/IMG-20240123-042241-949.jpg', message=hussein_ali)
         joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
         joker = Get(joker)
         try:
             await event.client(joker)
         except BaseException:
             pass
-print('تم تشغيل نشر التلقائي لسورس الجوكر')
+print('تم تشغيل نشر التلقائي')
 ha313so.run_until_disconnected()
