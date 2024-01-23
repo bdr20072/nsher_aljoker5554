@@ -10,12 +10,7 @@
         "SESSION": {
             "description": "ضع كود التيرمكس الذي استخرجته من بوت الجوكر",
             "value": "",
-            "required": true
-        },
-       "COMMAND_HAND_LER": {
-       "description": "لا تـغييـر هـذه القـيمـة",
-       "required": "."  true
-           
+            "required": true      
         },
         "APP_ID": {
             "description": "ضع ابب ايدي المكون من 6 ارقام",
