@@ -123,8 +123,7 @@ async def Hussein(event):
 @ha313so.on(events.NewMessage(outgoing=True, pattern='.ايقاف النشر'))
 async def stop_aljoker(event):
     global yaAli
-    yaAli = False      
-        return await edit_delete(event, "**- تم ايقـاف التڪـرار .. بنجـاح ✅**")    return await edit_delete(event, "**- لايوجـد هنـاك تڪرار لـ إيقافه ؟!**")
+    yaAli = False
     await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.(الاوامر|فحص)$"))
 async def Hussein(event):
