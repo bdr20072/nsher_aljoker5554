@@ -21,6 +21,10 @@
             "description": "ضع ابب هاش المكون من ارقام وحروف",
             "value": "",
             "required": true
+        },
+        "COMMAND_HAND_LER": {
+        "description": "لا تغير هذه القيمه",
+        "value": "." 
         }
     },
     "automatic_deploy": false
