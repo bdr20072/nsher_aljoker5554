@@ -14,7 +14,7 @@
         },
        "COMMAND_HAND_LER": {
        "description": "لا تـغييـر هـذه القـيمـة",
-       "required": "." 
+       "required": ".", true
            
         },
         "APP_ID": {
