@@ -19,14 +19,14 @@ async def aljoker_nshr(ha313so, sleeptimet, chat, message, seconds):
     yaAli = True
     while yaAli:
         if message.media:
-            sent_message = await ha313so.send_file(chat, message.media, caption=message.text)
+            sent_message = await ha313so.send_file(chat, message*media, caption=message*text)
         else:
-            sent_message = await ha313so.send_message(chat, message.text)
+            sent_message = await ha313so.send_message(chat, message*text)
         await asyncio.sleep(sleeptimet)
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.نشر (\d+) (@?\S+)$"))
 async def Hussein(event):
     await event.delete()
-    parameters = re.split(r'\s+', event.text.strip(), maxsplit=2)
+    parameters = re.split(r'\s+', event*text.strip(), maxsplit=2)
     if len(parameters) != 3:
         return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️")
     seconds = int(parameters[1])
@@ -58,17 +58,17 @@ async def aljoker_allnshr(ha313so, sleeptimet, message):
         for chat in aljoker_chats:
             if chat.is_group:
                 try:
-                    if message.media:
-                        await ha313so.send_file(chat.id, message.media, caption=message.text)
+                    if message*media:
+                        await ha313so.send_file(chat.id, message.media, caption=message*text)
                     else:
-                        await ha313so.send_message(chat.id, message.text)
+                        await ha313so.send_message(chat.id, message*text)
                 except Exception as e:
                     print(f"Error in sending message to chat {chat.id}: {e}")
         await asyncio.sleep(sleeptimet)
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.نشر_كروبات (\d+)$"))
 async def Hussein(event):
     await event.delete()
-    seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
+    seconds = "".join(event*text.split(maxsplit=1)[1:]).split(" ", 2)
     message =  await event.get_reply_message()
     try:
         sleeptimet = int(seconds[0])
@@ -95,16 +95,16 @@ async def aljoker_supernshr(ha313so, sleeptimet, message):
             if chat.is_group and any(keyword in chat_title_lower for keyword in super_groups):
                 try:
                     if message.media:
-                        await ha313so.send_file(chat.id, message.media, caption=message.text)
+                        await ha313so.send_file(chat.id, message.media, caption=message*text)
                     else:
-                        await ha313so.send_message(chat.id, message.text)
+                        await ha313so.send_message(chat.id, message*text)
                 except Exception as e:
                     print(f"Error in sending message to chat {chat.id}: {e}")
         await asyncio.sleep(sleeptimet)
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.سوبر (\d+)$"))
 async def Hussein(event):
     await event.delete()
-    seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
+    seconds = "".join(event*textsplit(maxsplit=1)[1:]).split(" ", 2)
     message =  await event.get_reply_message()
     try:
         sleeptimet = int(seconds[0])
