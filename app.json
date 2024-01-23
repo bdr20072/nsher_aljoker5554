@@ -12,6 +12,11 @@
             "value": "",
             "required": true
         },
+       "COMMAND_HAND_LER": {
+       "description": "لا تـغييـر هـذه القـيمـة",
+       "required": "." 
+           
+        },
         "APP_ID": {
             "description": "ضع ابب ايدي المكون من 6 ارقام",
             "value": "",
